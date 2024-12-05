@@ -76,7 +76,7 @@ const ProdutoForm = () => {
     } catch (error) {
       Swal.fire({ icon: 'error', title: 'Erro', text: 'Erro ao excluir produto.' });
     }
-  }, [fetchProdutos]); // Apenas recria a função handleDelete quando fetchProdutos mudar
+  }, [fetchProdutos]); 
 
   useEffect(() => {
     fetchProdutos();
@@ -111,7 +111,7 @@ const ProdutoForm = () => {
         </td>
       </tr>
     ));
-  }, [produtos, handleDelete]); // Agora handleDelete é uma função estável
+  }, [produtos, handleDelete]); 
 
   return (
     <div className="form-container">
